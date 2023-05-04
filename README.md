@@ -1,3 +1,130 @@
 # Widget
 > Widget per notion a caso
 - [social](https://rarissimaavis.github.io/widget/social.html)
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Socials</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: grid;
+      font-family: "Poppins", sans-serif;
+      place-items: center;
+    }
+
+    .wrapper {
+      padding-top: 10px;
+      display: inline-flex;
+    }
+
+    .icon {
+      font-size: 2em;
+      color: #7a7a7a
+    }
+
+    .email:hover {
+      color: #23c8c8;
+    }
+
+    .telegram:hover {
+      color: #0088cc;
+    }
+
+    .instagram:hover {
+      color: #F166D9;
+    }
+
+    .github:hover {
+      color: #333;
+    }
+    
+    .spotify:hover {
+      color: #1DB954;
+    }
+    
+    .social {
+      position: relative;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <body>
+
+    <div class="wrapper">
+
+      <!-- Start email Icon -->
+      <div id="email" onclick="navigate(this.id)" class="social">
+        <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
+      </div>
+      <!-- End email Icon -->
+
+      <!-- Start telegram Icon -->
+      <div id="telegram" onclick="navigate(this.id)" class="social">
+        <span class="icon telegram"><i class="fab fa-telegram"></i></span>
+      </div>
+      <!-- End telegram Icon -->
+
+      <!-- Start instagram Icon -->
+      <div id="instagram" onclick="navigate(this.id)" class="social">
+        <span class="icon instagram"><i class="fab fa-instagram"></i></span>
+      </div>
+      <!-- End instagram Icon -->
+
+      <!-- Start github Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social">
+        <span class="icon github"><i class="fab fa-github"></i></span>
+      </div>
+      <!-- End github Icon -->
+      
+      <!-- Start spotify Icon -->
+      <div id="spotify" onclick="navigate(this.id)" class="social">
+        <span class="icon spotify"><i class="fab fa-spotify"></i></span>
+      </div>
+      <!-- End spotify Icon -->
+
+    </div>
+
+
+    <script>
+      function navigate(id) {
+        
+        if (id === "email") {
+          window.open("mailto:kawaeepy@gmail.com", '_blank').focus();
+        }
+        else if (id === "telegram") {
+          window.open("https://telegram.me/kawaeepy", '_blank').focus();
+        }
+        else if (id === "instagram") {
+          window.open("https://www.instagram.com/rara.avis/", '_blank').focus();
+        }
+        else if (id === "github") {
+          window.open("https://github.com/rarissimaavis", '_blank').focus();
+        }
+        else if (id === "spotify") {
+          window.open("https://open.spotify.com/user/31i54h4v4p6646yd4ginusu7nevy?si=b28a87d0930e4ba2", '_blank').focus();
+        }
+      }
+
+    </script>
+
+  </body>
+
+</html>
