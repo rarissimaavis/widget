@@ -37,6 +37,11 @@
       color: #7a7a7a
     }
 
+
+    .blog:hover {
+      color: #ffbd2f;
+    }
+
     .email:hover {
       color: #23c8c8;
     }
@@ -47,6 +52,30 @@
 
     .instagram:hover {
       color: rgb(241, 102, 217);
+    }
+
+    .linkedin:hover {
+      color: #0e76a8;
+    }
+
+    .twitter:hover {
+      color: #26a7de;
+    }
+
+    .reddit:hover {
+      color: #ff4500;
+    }
+
+    .tiktok:hover {
+      color: #ff0050;
+    }
+
+    .youtube:hover {
+      color: #FF0000;
+    }
+
+    .pinterest:hover {
+      color: #c8232c;
     }
 
     .telegram:hover {
@@ -68,6 +97,12 @@
 
     <div class="wrapper">
 
+      <!-- Start blog Icon -->
+      <div id="blog" onclick="navigate(this.id)" class="social">
+        <span class="icon blog"><i class="fa-solid fa-blog"></i></span>
+      </div>
+      <!-- End blog Icon -->
+
       <!-- Start email Icon -->
       <div id="email" onclick="navigate(this.id)" class="social">
         <span class="icon email"><i class="fa-solid fa-envelope"></i></span>
@@ -85,6 +120,42 @@
         <span class="icon instagram"><i class="fab fa-instagram"></i></span>
       </div>
       <!-- End instagram Icon -->
+
+      <!-- Start linkedin Icon -->
+      <div id="linkedin" onclick="navigate(this.id)" class="social">
+        <span class="icon linkedin"><i class="fab fa-linkedin"></i></span>
+      </div>
+      <!-- End linkedin Icon -->
+
+      <!-- Start twitter Icon -->
+      <div id="twitter" onclick="navigate(this.id)" class="social">
+        <span class="icon twitter"><i class="fab fa-twitter"></i></span>
+      </div>
+      <!-- End twitter Icon -->
+
+      <!-- Start reddit Icon -->
+      <div id="reddit" onclick="navigate(this.id)" class="social">
+        <span class="icon reddit"><i class="fab fa-reddit"></i></span>
+      </div>
+      <!-- End reddit Icon -->
+
+      <!-- Start tiktok Icon -->
+      <div id="tiktok" onclick="navigate(this.id)" class="social">
+        <span class="icon tiktok"><i class="fab fa-tiktok"></i></span>
+      </div>
+      <!-- End tiktok Icon -->
+
+      <!-- Start youtube Icon -->
+      <div id="youtube" onclick="navigate(this.id)" class="social">
+        <span class="icon youtube"><i class="fab fa-youtube"></i></span>
+      </div>
+      <!-- End youtube Icon -->
+
+      <!-- Start pinterest Icon -->
+      <div id="pinterest" onclick="navigate(this.id)" class="social">
+        <span class="icon pinterest"><i class="fab fa-pinterest"></i></span>
+      </div>
+      <!-- End pinterest Icon -->
 
       <!-- Start telegram Icon -->
       <div id="telegram" onclick="navigate(this.id)" class="social">
@@ -104,15 +175,36 @@
 
         //if you want the URL to open in the same window use '_parent'  instead of '_blank'
 
+        if (id === "blog")
+          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
+
         else if (id === "email") {
           window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
         }
 
         else if (id === "facebook") {
-          window.open("https://www.facebook.com/rosalia.fortino/", '_blank').focus(); //Add the url to your facebook page or account
+          window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
         }
         else if (id === "instagram") {
-          window.open("https://www.instagram.com/rara.avis/", '_blank').focus(); //Add the url to your instagram account
+          window.open("instagram.com", '_blank').focus(); //Add the url to your instagram account
+        }
+        else if (id === "linkedin") {
+          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "twitter") {
+          window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
+        }
+        else if (id === "reddit") {
+          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
+        }
+        else if (id === "tiktok") {
+          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
+        }
+        else if (id === "youtube") {
+          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
+        }
+        else if (id === "pinterest") {
+          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
