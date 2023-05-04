@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 
-<!-- Auther: Shorouk Abdelaziz  https://shorouk.dev -->
-
 <html lang="en">
 
 <head>
@@ -31,9 +29,7 @@
     }
 
     .icon {
-      /* Change the icon size here */
       font-size: 2em;
-      /* Change the icons colours here*/
       color: #7a7a7a
     }
 
@@ -101,42 +97,18 @@
 
     <script>
       function navigate(id) {
-
-        //if you want the URL to open in the same window use '_parent'  instead of '_blank'
-
-        if (id === "blog")
-          window.open("https://blog.shorouk.dev", '_blank').focus(); //Add the url to your blog
-
-        else if (id === "email") {
-          window.open("mailto:someone@yoursite.com", '_blank').focus(); //Add your email after "mailto:""
+        
+        if (id === "email") {
+          window.open("mailto:someone@yoursite.com", '_blank').focus();
         }
-
         else if (id === "facebook") {
-          window.open("https://www.facebook.com/rosalia.fortino", '_blank').focus(); //Add the url to your facebook page or account
+          window.open("https://www.facebook.com/rosalia.fortino", '_blank').focus();
         }
         else if (id === "instagram") {
-          window.open("https://www.instagram.com/rara.avis/", '_blank').focus(); //Add the url to your instagram account
-        }
-        else if (id === "linkedin") {
-          window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "twitter") {
-          window.open("https://twitter.com/", '_blank').focus(); //Add the url to your pinterest account
-        }
-        else if (id === "reddit") {
-          window.open("https://www.reddit.com/", '_blank').focus(); //Add the url to your reddit account
-        }
-        else if (id === "tiktok") {
-          window.open("https://www.tiktok.com/", '_blank').focus(); //Add the url to your tiktok account
-        }
-        else if (id === "youtube") {
-          window.open("https://www.youtube.com/", '_blank').focus(); //Add the url to your youtube account
-        }
-        else if (id === "pinterest") {
-          window.open("https://www.pinterest.com/", '_blank').focus(); //Add the url to your pinterest account
+          window.open("https://www.instagram.com/rara.avis/", '_blank').focus();
         }
         else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
+          window.open("https://web.telegram.org/", '_blank').focus();
         }
       }
 
