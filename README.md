@@ -1,3 +1,3 @@
 # Widget
 > Widget per notion a caso
-- social: icone social
+- [social](https://rarissimaavis.github.io/widget/social.html): icone social
