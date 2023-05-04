@@ -25,7 +25,6 @@
     .wrapper {
       padding-top: 10px;
       display: inline-flex;
-
     }
 
     .icon {
@@ -43,10 +42,6 @@
 
     .instagram:hover {
       color: rgb(241, 102, 217);
-    }
-
-    .telegram:hover {
-      color: #2AABEE;
     }
 
     .github:hover {
@@ -86,12 +81,6 @@
       </div>
       <!-- End instagram Icon -->
 
-      <!-- Start telegram Icon -->
-      <div id="telegram" onclick="navigate(this.id)" class="social">
-        <span class="icon telegram"><i class="fab fa-telegram"></i></span>
-      </div>
-      <!-- End telegram Icon -->
-
       <!-- Start github Icon -->
       <div id="github" onclick="navigate(this.id)" class="social">
         <span class="icon github"><i class="fab fa-github"></i></span>
@@ -99,8 +88,6 @@
       <!-- End github Icon -->
 
     </div>
-
-
 
 
     <script>
@@ -115,17 +102,12 @@
         else if (id === "instagram") {
           window.open("https://www.instagram.com/rara.avis/", '_blank').focus();
         }
-        else if (id === "telegram") {
-          window.open("https://web.telegram.org/", '_blank').focus();
-        }
         else if (id === "github") {
           window.open("https://github.com/rarissimaavis", '_blank').focus();
         }
       }
 
     </script>
-
-
 
   </body>
 
