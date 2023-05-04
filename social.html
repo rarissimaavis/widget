@@ -49,6 +49,10 @@
       color: #2AABEE;
     }
 
+    .github:hover {
+      color: #2AABEE;
+    }
+    
     .social {
       position: relative;
       margin: 10px;
@@ -88,7 +92,11 @@
       </div>
       <!-- End telegram Icon -->
 
-
+      <!-- Start github Icon -->
+      <div id="github" onclick="navigate(this.id)" class="social">
+        <span class="icon github"><i class="fab fa-github"></i></span>
+      </div>
+      <!-- End github Icon -->
 
     </div>
 
@@ -109,6 +117,9 @@
         }
         else if (id === "telegram") {
           window.open("https://web.telegram.org/", '_blank').focus();
+        }
+        else if (id === "github") {
+          window.open("https://github.com/rarissimaavis", '_blank').focus();
         }
       }
 
