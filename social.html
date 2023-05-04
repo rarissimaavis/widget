@@ -45,7 +45,11 @@
     }
 
     .github:hover {
-      color: #2AABEE;
+      color: #333;
+    }
+    
+    .spotify:hover {
+      color: #1DB954;
     }
     
     .social {
@@ -86,6 +90,12 @@
         <span class="icon github"><i class="fab fa-github"></i></span>
       </div>
       <!-- End github Icon -->
+      
+      <!-- Start spotify Icon -->
+      <div id="spotify" onclick="navigate(this.id)" class="social">
+        <span class="icon spotify"><i class="fab fa-spotify"></i></span>
+      </div>
+      <!-- End spotify Icon -->
 
     </div>
 
@@ -97,13 +107,16 @@
           window.open("mailto:kawaeepy@gmail.com", '_blank').focus();
         }
         else if (id === "facebook") {
-          window.open("https://www.facebook.com/rosalia.fortino", '_blank').focus();
+          window.open("http://www.facebook.com/rosalia.fortino", '_blank').focus();
         }
         else if (id === "instagram") {
           window.open("https://www.instagram.com/rara.avis/", '_blank').focus();
         }
         else if (id === "github") {
           window.open("https://github.com/rarissimaavis", '_blank').focus();
+        }
+        else if (id === "spotify") {
+          window.open("https://open.spotify.com/user/31i54h4v4p6646yd4ginusu7nevy?si=b28a87d0930e4ba2", '_blank').focus();
         }
       }
 
